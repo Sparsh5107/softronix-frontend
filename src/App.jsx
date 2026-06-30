@@ -1,10 +1,10 @@
-import './App.css'
-
+// import './App.css'
+import Navbar from "./components/sparsh-folder/NavBar_component/Navbar"
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+      <Navbar />
 
     </>
   )
