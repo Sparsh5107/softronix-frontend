@@ -3,9 +3,9 @@ import NavLinks from "./NavLinks";
 import NavLogo from "./NavLogo";
 import MegaMenu from "./MegaMenu";
 
-import MobileMenu from "../mobile/MobileMenu";
-import MobileMenuButton from "../mobile/MobileMenuButton";
-import MobileNavLinks from "../mobile/MobileNavLinks";
+import MobileMenu from "../NavBar_component/mobile/MobileMenu";
+import MobileMenuButton from "../NavBar_component/mobile/MobileMenuButton";
+import MobileNavLinks from "../NavBar_component/mobile/MobileNavLinks";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);

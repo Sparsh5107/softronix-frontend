@@ -4,7 +4,7 @@ import {
     navLinks,
     industries,
     services,
-} from "../NavBar_component/navData";
+} from "../navdata";
 
 import MobileAccordion from "./MobileAccordion";
 import MobileInfoMenu from "./MobileInfoMenu";
