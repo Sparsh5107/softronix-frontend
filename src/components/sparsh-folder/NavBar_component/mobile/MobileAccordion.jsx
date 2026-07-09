@@ -100,7 +100,7 @@ const MobileAccordion = ({
                     ease-in-out
 
                     ${isOpen
-                        ? "max-h-[700px] opacity-100"
+                        ? "max-h-175 opacity-100"
                         : "max-h-0 opacity-0"
                     }
                 `}

@@ -19,7 +19,7 @@ const MobileInfoMenu = ({
                     overflow-hidden
 
                     rounded-2xl
-                    bg-gradient-to-br
+                    bg-linear-to-br
                     from-[#005BAA]
                     to-[#0077C8]
 
