@@ -1,92 +1,128 @@
+export const logo = {
+  src: "https://softtronix.in/Image/Softronixlogo-removebg-preview.png",
+  alt: "Softtronix",
+  path: "/",
+};
+
+/**
+ * INDUSTRIES MENU DATA
+ */
 export const industries = [
   {
+    id: 1,
     title: "Banking & Financial Services",
-    href: "/industries/banking-financial-services",
+    path: "/industries/banking-financial-services",
   },
   {
+    id: 2,
     title: "Healthcare",
-    href: "/industries/healthcare",
+    path: "/industries/healthcare",
   },
   {
+    id: 3,
     title: "Education",
-    href: "/industries/education",
+    path: "/industries/education",
   },
   {
+    id: 4,
     title: "Travel & Logistics",
-    href: "/industries/travel-logistics",
+    path: "/industries/travel-logistics",
   },
   {
+    id: 5,
     title: "Hospitality",
-    href: "/industries/hospitality",
+    path: "/industries/hospitality",
   },
   {
+    id: 6,
     title: "Public Service",
-    href: "/industries/public-service",
+    path: "/industries/public-service",
   },
   {
+    id: 7,
     title: "High Tech",
-    href: "/industries/high-tech",
+    path: "/industries/high-tech",
   },
   {
+    id: 8,
     title: "Manufacturing",
-    href: "/industries/manufacturing",
+    path: "/industries/manufacturing",
   },
   {
+    id: 9,
     title: "Retail",
-    href: "/industries/retail",
+    path: "/industries/retail",
   },
   {
+    id: 10,
     title: "Insurance",
-    href: "/industries/insurance",
+    path: "/industries/insurance",
   },
 ];
 
+/**
+ * SERVICES MENU DATA
+ */
 export const services = [
   {
+    id: 1,
     title: "Application Development",
-    href: "/services/application-development",
+    path: "/services/application-development",
   },
   {
+    id: 2,
     title: "Consulting",
-    href: "/services/consulting",
+    path: "/services/consulting",
   },
   {
+    id: 3,
     title: "Software Engineering",
-    href: "/services/software-engineering",
+    path: "/services/software-engineering",
   },
   {
+    id: 4,
     title: "Data & Analytics",
-    href: "/services/data-analytics",
+    path: "/services/data-analytics",
   },
   {
+    id: 5,
     title: "Artificial Intelligence",
-    href: "/services/artificial-intelligence",
+    path: "/services/artificial-intelligence",
   },
   {
+    id: 6,
     title: "EdTech",
-    href: "/services/edtech",
+    path: "/services/edtech",
   },
 ];
 
+/**
+ * NAVIGATION CONFIG (IMPORTANT CHANGE)
+ */
 export const navLinks = [
   {
+    id: "who-we-are",
     title: "Who We Are",
-    href: "/about",
+    path: "/about",
   },
   {
+    id: "industries",
     title: "Industries",
-    dropdown: industries,
+    menu: "industries",
   },
   {
+    id: "services",
     title: "Services",
-    dropdown: services,
+    menu: "services",
   },
   {
+    id: "career",
     title: "Career",
-    href: "/career",
+    path: "/career",
   },
   {
+    id: "contact",
     title: "Contact",
-    href: "/contact",
+    path: "/contact",
   },
 ];
