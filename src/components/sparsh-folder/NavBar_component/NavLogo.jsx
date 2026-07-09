@@ -1,12 +1,14 @@
+import { logo } from "./navdata";
+import { Link } from "react-router-dom";
 const NavLogo = () => {
     return (
-        <a href="/" className="flex items-center">
+        <Link to={logo.path} className="flex items-center">
             <img
-                src="https://softtronix.in/Image/Softronixlogo-removebg-preview.png"
-                alt="Softtronix"
-                className="h-12 w=auto"
+                src={logo.src}
+                alt={logo.alt}
+                className="w-auto h-12"
             />
-        </a>
+        </Link>
     );
 };
 
