@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* this is Navbar */
 @keyframes fadeInMenu {
     from {
         opacity: 0;
@@ -14,4 +15,59 @@
 
 .animate-fade {
     animation: fadeInMenu 0.5s ease-in;
+}
+
+
+/* this is Home page animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+
+}
+
+@keyframes floatSlow {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+}
+
+@keyframes pulseSlow {
+
+    0%,
+    100% {
+        opacity: .25;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: .5;
+        transform: scale(1.15);
+    }
+
+}
+
+.animate-float {
+    animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+    animation: floatSlow 10s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulseSlow 5s ease-in-out infinite;
 }

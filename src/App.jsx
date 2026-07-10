@@ -1,13 +1,10 @@
 // import './App.css'
-import Navbar from "./components/sparsh-folder/NavBar_component/Navbar"
-import Footer from "./components/sparsh-folder/Footer_Component/Footer"
+import AppRoutes from "./components/routes/AppRoutes"
 function App() {
 
   return (
     <>
-      <Navbar />
-
-      <Footer />
+      <AppRoutes />
 
 
     </>
