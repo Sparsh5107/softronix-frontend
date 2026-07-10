@@ -8,11 +8,11 @@ import Industries_Home from './components/Industries_Home'
 function Home() {
     return (
         <>
-            <Hero />
+            {/* <Hero />
             <About_Home />
-            <VisionMission />
+            <VisionMission /> */}
             <Industries_Home />
-            <Services_Home />
+            {/* <Services_Home /> */}
         </>
     )
 }
