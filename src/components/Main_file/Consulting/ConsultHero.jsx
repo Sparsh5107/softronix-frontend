@@ -1,5 +1,7 @@
 import Hero from "../common/Hero";
 
+
+
 const ConsultHero = () => {
   const BannerData = {
     image:
@@ -15,6 +17,7 @@ const ConsultHero = () => {
         title={BannerData.title}
         alt={BannerData.alt}
       />
+      
     </>
   );
 };

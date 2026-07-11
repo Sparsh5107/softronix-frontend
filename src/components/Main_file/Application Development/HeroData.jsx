@@ -1,3 +1,4 @@
+// import Hero from "../common/Hero";
 import Hero from "../common/Hero";
 
 const HeroData = () => {

@@ -1,11 +1,11 @@
+import { getstartdata } from "../../../assets/header/OfferData";
 import Offerings from "../common/Offerings";
-import { getstartdata } from "../../assets/header/OfferData";
-
 const GetStart = () => {
   return (
     <>
       <div>
-        <Offerings data={getstartdata} />
+         <Offerings data={getstartdata}/>
+        
       </div>
     </>
   );

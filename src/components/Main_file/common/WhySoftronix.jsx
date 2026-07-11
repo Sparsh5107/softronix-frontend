@@ -38,5 +38,3 @@ const WhySoftronix = ({ data }) => {
 
 export default WhySoftronix;
 
-// flex flex-row justify-center items-center gap-8
-// flex flex-col justify-center items-center

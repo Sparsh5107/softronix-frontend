@@ -1,6 +1,5 @@
-import WhySoftData from "../Application Development/WhySoftData";
-import Offerings from "./Offerings";
 
+import WhySoftData from "../Application Development/WhySoftData";
 const Overview = ({ title, para, points, img, alt }) => {
   return (
     <section className="bg-gray-200  mx-3 px-3 sm:px-6 lg:px-10   py-10 sm:py-12 lg:py-16  sm:mx-4 lg:mx-10">
@@ -34,8 +33,7 @@ const Overview = ({ title, para, points, img, alt }) => {
         </div>
 
         {/* Uses The WhySoftData Component */}
-        {/* <WhySoftData/> */}
-        <WhySoftData />
+        <WhySoftData/>
       </div>
     </section>
   );
