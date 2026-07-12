@@ -1,7 +1,7 @@
 import { useState } from "react";
-import NavLinks from "./NavLinks";
-import NavLogo from "./NavLogo";
-import MegaMenu from "./MegaMenu";
+import NavLinks from "./component/NavLinks";
+import NavLogo from "./component/NavLogo";
+import MegaMenu from "./component/MegaMenu";
 
 import MobileMenu from "../NavBar_component/mobile/MobileMenu";
 import MobileMenuButton from "../NavBar_component/mobile/MobileMenuButton";
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="relative w-full bg-white"
+      className="fixed top-0 left-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md"
       onMouseLeave={() => setActiveMenu(null)}
     >
       <div
