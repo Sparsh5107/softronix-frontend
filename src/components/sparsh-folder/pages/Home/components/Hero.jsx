@@ -3,7 +3,7 @@ import { hero } from "../data/hero_data";
 
 function Hero() {
     return (
-        <section className="relative h-screen w-full overflow-hidden">
+        <section className="relative min-h-screen w-full overflow-hidden">
 
             {/* Background Video */}
             <video
@@ -17,34 +17,37 @@ function Hero() {
             </video>
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/50"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/65 to-black/50" />
 
             {/* Content */}
-            <div className="relative z-10 flex h-full items-center">
-                <div className="mx-auto w-full max-w-7xl px-6 lg:px-12">
+            <div className="relative z-10 flex min-h-screen items-center">
+                <div className="mx-auto w-full max-w-7xl px-6 py-28 md:px-8 lg:px-12 xl:px-16">
 
-                    <span className="inline-block rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-medium tracking-wide text-white backdrop-blur-md">
+                    {/* Badge */}
+                    <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-6 py-2.5 text-sm font-medium tracking-wide text-white backdrop-blur-md">
                         {hero.badge}
                     </span>
 
-                    <h1 className="mt-6 max-w-4xl text-5xl font-bold leading-tight text-white md:text-6xl lg:text-7xl">
+                    {/* Heading */}
+                    <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-[1.15] text-white md:text-6xl xl:text-7xl">
                         {hero.title}
                     </h1>
 
-                    <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+                    {/* Description */}
+                    <p className="mt-8 max-w-2xl text-lg leading-9 text-gray-300">
                         {hero.description}
                     </p>
 
                     {/* Buttons */}
-                    <div className="mt-10 flex flex-wrap gap-5">
+                    <div className="mt-12 flex flex-wrap gap-5">
                         {hero.buttons.map((button) => (
                             <a
                                 key={button.text}
                                 href={button.link}
                                 className={
                                     button.variant === "primary"
-                                        ? "rounded-lg bg-[#0077c8] px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#005fa3] hover:shadow-2xl"
-                                        : "rounded-lg border border-white/30 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-black"
+                                        ? "rounded-xl bg-[#0077C8] px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#005fa3] hover:shadow-2xl"
+                                        : "rounded-xl border border-white/25 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white hover:bg-white hover:text-[#063B78]"
                                 }
                             >
                                 {button.text}
@@ -53,23 +56,21 @@ function Hero() {
                     </div>
 
                     {/* Stats */}
-                    <div className="mt-16 grid max-w-3xl grid-cols-1 gap-5 sm:grid-cols-3">
-
+                    <div className="mt-20 flex flex-wrap gap-5 lg:gap-6">
                         {hero.highlights.map((item) => (
                             <div
                                 key={item.label}
-                                className="rounded-2xl border border-white/20 bg-white/10 p-6 text-center backdrop-blur-lg transition-all duration-300 hover:-translate-y-2 hover:bg-white/20 hover:shadow-xl"
+                                className="min-w-45 rounded-2xl border border-white/15 bg-white/10 px-8 py-7 text-center backdrop-blur-lg transition-all duration-300 hover:-translate-y-2 hover:border-white/30 hover:bg-white/20 hover:shadow-xl"
                             >
                                 <h3 className="text-3xl font-bold text-white">
                                     {item.value}
                                 </h3>
 
-                                <p className="mt-2 text-sm text-gray-300">
+                                <p className="mt-2 text-sm font-medium tracking-wide text-gray-300">
                                     {item.label}
                                 </p>
                             </div>
                         ))}
-
                     </div>
 
                 </div>
