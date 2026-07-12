@@ -1,4 +1,4 @@
-import { logo } from "./navdata";
+import { logo } from "../navdata";
 import { Link } from "react-router-dom";
 const NavLogo = () => {
     return (

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navLinks } from "./navData";
+import { navLinks } from "../navData";
 import { ChevronDown } from "lucide-react";
 
 const linkClasses = `
@@ -27,8 +27,8 @@ const linkClasses = `
 `;
 
 const NavLinks = ({ activeMenu, setActiveMenu }) => {
-    console.log("NAv link runnig")
-    console.log("Navbar state: ", activeMenu)
+    // console.log("NAv link runnig")
+    // console.log("Navbar state: ", activeMenu)
     return (
         <nav className="flex items-center gap-10">
             {navLinks.map((link) => {
@@ -38,9 +38,9 @@ const NavLinks = ({ activeMenu, setActiveMenu }) => {
                         <button
                             key={link.id}
                             type="button"
-                            onMouseEnter={() => {
+                            onClick={() => {
                                 console.log("Hover : ", link.menu);
-                                setActiveMenu(link.menu); // Fix: Removed space
+                                setActiveMenu(link.menu);
                             }}
                             className={`${linkClasses} flex items-center gap-1`}
                         >

@@ -1,5 +1,5 @@
-import IndustriesMenu from "./dropdowns/IndustriesMenu";
-import ServicesMenu from "./dropdowns/ServicesMenu";
+import IndustriesMenu from "../dropdowns/IndustriesMenu";
+import ServicesMenu from "../dropdowns/ServicesMenu";
 
 const MegaMenu = ({ activeMenu }) => {
     return (
