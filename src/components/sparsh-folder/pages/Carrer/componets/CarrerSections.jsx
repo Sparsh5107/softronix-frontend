@@ -22,9 +22,8 @@ function CareerSections() {
                     {careerSections.cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`grid overflow-hidden rounded-md bg-white shadow-lg transition duration-300 hover:shadow-xl space-x-0.5 lg:grid-cols-2 ${card.imageLeft ? "" : "lg:[&>*:first-child]:order-2"
-                                }`}
-                        >
+                            className={`grid overflow-hidden rounded-md bg-white shadow-lg transition duration-300 hover:shadow-xl space-x-0.5 lg:grid-cols-2 ${card.imageLeft ? "" : "lg:[&>*:first-child]:order-2 "
+                                }`}>
 
                             {/* Image */}
                             <div className="h-72 md:h-80">
