@@ -5,6 +5,7 @@ import AboutUs from '../sparsh-folder/pages/AboutUs/AboutUs'
 import Home from '../sparsh-folder/pages/Home/Home'
 import Contact from '../sparsh-folder/pages/ContactUS/Contact'
 import Carrer from '../sparsh-folder/pages/Carrer/Carrer'
+import BankFinanance from '../sparsh-folder/pages/Industries/Bank_Finance/BankFinanance'
 
 function AppRoutes() {
     return (
@@ -24,6 +25,7 @@ function AppRoutes() {
 
                     {/* Industries */}
                     <Route path="industries">
+                        <Route path="banking-financial-services" element={<BankFinanance />} />
                     </Route>
 
                 </Route>

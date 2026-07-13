@@ -7,8 +7,8 @@ function MainLayout() {
     return (
         <>
             <Navbar />
-
-            <main className="pt-20">                <Outlet />
+            <main className="pt-10">
+                <Outlet />
             </main>
             <Footer />
 
