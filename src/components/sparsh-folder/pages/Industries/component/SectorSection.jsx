@@ -1,7 +1,7 @@
-import { financeData } from "../bankFinancedata";
 
-const SectorSection = () => {
-    const { sectors } = financeData;
+
+const SectorSection = ({ data }) => {
+    const { sectors } = data;
 
     return (
         <section className="relative overflow-hidden bg-white py-20 lg:py-24">

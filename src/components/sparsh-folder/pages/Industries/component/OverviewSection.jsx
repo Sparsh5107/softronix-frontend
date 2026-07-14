@@ -1,7 +1,6 @@
-import { financeData } from "../bankFinancedata";
 
-const OverviewSection = () => {
-    const { overview } = financeData;
+const OverviewSection = ({ data }) => {
+    const { overview } = data;
 
     return (
         <section className="relative overflow-hidden bg-linear-to-b from-[#F7FAFD] via-white to-[#F7FAFD] py-20 lg:py-28">

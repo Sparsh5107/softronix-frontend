@@ -1,7 +1,6 @@
-import { financeData } from "../bankFinancedata";
 
-const WhySection = () => {
-    const { whySofttronix } = financeData;
+const WhySection = ({ data }) => {
+    const { whySofttronix } = data;
 
     return (
         <section className="relative overflow-hidden bg-white py-20 lg:py-24">

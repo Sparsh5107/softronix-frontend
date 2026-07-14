@@ -1,17 +1,20 @@
 import React from 'react'
-import HeroSection from './component/HeroSection'
-import OverviewSection from './component/OverviewSection'
-import SectorSection from './component/SectorSection'
-import FeaturesSection from './component/FeaturesSection'
-import WhySection from './component/WhySection'
+import { financeData } from './bankFinancedata'
+import HeroSection from '../component/HeroSection'
+import OverviewSection from '../component/OverviewSection'
+import SectorSection from '../component/SectorSection'
+import FeaturesSection from '../component/FeaturesSection'
+import WhySection from '../component/WhySection'
+
+
 function BankFinanance() {
     return (
         <>
-            <HeroSection />
-            <OverviewSection />
-            <SectorSection />
-            <FeaturesSection />
-            <WhySection />
+            <HeroSection data={financeData} />
+            <OverviewSection data={financeData} />
+            <SectorSection data={financeData} />
+            <FeaturesSection data={financeData} />
+            <WhySection data={financeData} />
         </>
     )
 }

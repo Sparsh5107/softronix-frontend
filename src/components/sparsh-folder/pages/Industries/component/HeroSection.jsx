@@ -1,7 +1,7 @@
-import { financeData } from "../bankFinancedata";
 
-const HeroSection = () => {
-    const { hero } = financeData;
+const HeroSection = ({ data }) => {
+    const { hero } = data;
+
 
     return (
         <section className="relative overflow-hidden bg-[#063B78] pt-28 pb-20">

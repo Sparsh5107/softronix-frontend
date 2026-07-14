@@ -1,7 +1,6 @@
-import { financeData } from "../bankFinancedata";
 
-const FeaturesSection = () => {
-    const { features } = financeData;
+const FeaturesSection = ({ data }) => {
+    const { features } = data;
 
     return (
         <section className="bg-white py-20 lg:py-24">
