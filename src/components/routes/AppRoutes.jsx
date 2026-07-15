@@ -10,6 +10,13 @@ import HealthCare from '../sparsh-folder/pages/Industries/HealthCare/HealthCare'
 import Education from '../sparsh-folder/pages/Industries/Education/Education'
 import TravelLogistic from '../sparsh-folder/pages/Industries/TravelLogistic/TravelLogistic'
 
+import ADM from '../Main_file/Pages/ADM'
+import Consulting from '../Main_file/Pages/Consulting'
+import SoftwareProduct from '../Main_file/Pages/SoftwareProduct'
+import DataAnalytic from '../Main_file/Pages/DataAnalytics'
+import ArtificialIntelligence from '../Main_file/Pages/ArtificialIntelligence'
+import EdTech from '../Main_file/Pages/EdTech'
+
 function AppRoutes() {
     return (
         <>
@@ -24,6 +31,12 @@ function AppRoutes() {
                     {/* Services */}
 
                     <Route path="services">
+                        <Route path="application-development" element={<ADM />} />
+                        <Route path="consulting" element={<Consulting />} />
+                        <Route path="software-engineering" element={<SoftwareProduct />} />
+                        <Route path="data-analytics" element={<DataAnalytic />} />
+                        <Route path="artificial-intelligence" element={<ArtificialIntelligence />} />
+                        <Route path="edtech" element={<EdTech />} />
                     </Route>
 
                     {/* Industries */}
