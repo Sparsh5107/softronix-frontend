@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import "tailwindcss";
 
 /* this is Navbar */
@@ -72,6 +71,3 @@
 .animate-pulse-slow {
     animation: pulseSlow 5s ease-in-out infinite;
 }
-=======
-@import "tailwindcss";
->>>>>>> dev-rohan
