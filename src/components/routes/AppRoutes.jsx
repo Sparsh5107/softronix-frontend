@@ -16,6 +16,12 @@ import SoftwareProduct from '../Main_file/Pages/SoftwareProduct'
 import DataAnalytic from '../Main_file/Pages/DataAnalytics'
 import ArtificialIntelligence from '../Main_file/Pages/ArtificialIntelligence'
 import EdTech from '../Main_file/Pages/EdTech'
+import Hospitality from '../sparsh-folder/pages/Industries/Hospitality/Hospitality.jsx'
+import PublicService from '../sparsh-folder/pages/Industries/Public_Service/PublicService.jsx'
+import HighTech from '../sparsh-folder/pages/Industries/High_Tech/HighTech.jsx'
+import ManuFact from '../sparsh-folder/pages/Industries/manufacturing/ManuFact.jsx'
+import ReTail from '../sparsh-folder/pages/Industries/retail/ReTail.jsx'
+import Insurance from '../sparsh-folder/pages/Industries/insurance/Insurance.jsx'
 
 function AppRoutes() {
     return (
@@ -45,7 +51,14 @@ function AppRoutes() {
                         <Route path="healthcare" element={<HealthCare />} />
                         <Route path="education" element={<Education />} />
                         <Route path="travel-logistics" element={<TravelLogistic />} />
-                    </Route>
+                        <Route path="hospitality" element={<Hospitality />}/>     
+                        <Route path="public-service" element={<PublicService/>}/>   
+                        <Route path="high-tech" element={<HighTech/>}/>               
+                        <Route path="manufacturing" element={<ManuFact/>}/>  
+                        <Route path="retail" element={<ReTail/>}/>  
+                        <Route path="insurance" element={<Insurance/>}/>  
+
+                        </Route>
 
                 </Route>
             </Routes>
